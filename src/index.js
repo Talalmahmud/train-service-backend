@@ -9,6 +9,7 @@ const PORT = process.env.PORT;
 //routes
 const userRoutes = require("./routes/userRoute");
 const stationRoutes = require("./routes/stationRoute");
+const trainRoutes = require("./routes/trainRoute");
 
 dbConnect();
 app.use(cors());
@@ -17,6 +18,7 @@ app.use(express.json());
 
 app.use("/api/v1", userRoutes);
 app.use("/api/v1", stationRoutes);
+app.use("/api/v1", trainRoutes);
 
 app.use((err, req, res, next) => {
   res.status(500).send("Something broke!");
