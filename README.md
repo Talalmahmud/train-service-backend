@@ -28,30 +28,30 @@ SECRET_KEY = your_secret_key
 
 
 User API:
-Create: http//:localhost:port_no/api/v1/user
-Login: http//:localhost:port_no/api/v1/login
-Update: http//:localhost:port_no/api/v1/user/:userId
+# Create: http//:localhost:port_no/api/v1/user
+# Login: http//:localhost:port_no/api/v1/login
+# Update: http//:localhost:port_no/api/v1/user/:userId
 
-Station API:
-Create: http//:localhost:port_no/api/v1/station
-All Station: http//:localhost:port_no/api/v1/station
-Get Specific Station: http//:localhost:port_no/api/v1/station/:stationId
-Update: http//:localhost:port_no/api/v1/station/:stationId
+# # Station API:
+# Create: http//:localhost:port_no/api/v1/station
+# All Station: http//:localhost:port_no/api/v1/station
+# Get Specific Station: http//:localhost:port_no/api/v1/station/:stationId
+# Update: http//:localhost:port_no/api/v1/station/:stationId
 
-Train API:
-Create: http//:localhost:port_no/api/v1/train
-All Station: http//:localhost:port_no/api/v1/train
-Get Specific train: http//:localhost:port_no/api/v1/train/:trainId
-Update: http//:localhost:port_no/api/v1/train/:trainId
+# # Train API:
+# Create: http//:localhost:port_no/api/v1/train
+# All Station: http//:localhost:port_no/api/v1/train
+# Get Specific train: http//:localhost:port_no/api/v1/train/:trainId
+# Update: http//:localhost:port_no/api/v1/train/:trainId
 
 
-Wallet API:
-ADD: http//:localhost:port_no/api/v1/wallet
-All Fund: http//:localhost:port_no/api/v1/wallet/fund
-Get Specific user wallets: http//:localhost:port_no/api/v1/wallet
+# # Wallet API:
+# ADD: http//:localhost:port_no/api/v1/wallet
+# All Fund: http//:localhost:port_no/api/v1/wallet/fund
+# Get Specific user wallets: http//:localhost:port_no/api/v1/wallet
 
-Ticket API:
-Purchase: http//:localhost:port_no/api/v1/ticket
-All: http//:localhost:port_no/api/v1/ticket
+##  Ticket API:
+# Purchase: http//:localhost:port_no/api/v1/ticket
+# All: http//:localhost:port_no/api/v1/ticket
 
 
