@@ -20,9 +20,9 @@ cd <project-directory>
 3.Install the required dependencies:
 npm install
 4. add environvent varibale on .env file
-*PORT= your_port
-*MONGO_URI = your_mongodb_url
-*SECRET_KEY = your_secret_key
+\nPORT= your_port
+\nMONGO_URI = your_mongodb_url
+\nSECRET_KEY = your_secret_key
 
 5. npm run dev
 
