@@ -27,31 +27,75 @@ SECRET_KEY = your_secret_key
 5. npm run dev
 
 
-User API:
-# Create: http//:localhost:port_no/api/v1/user
-# Login: http//:localhost:port_no/api/v1/login
-# Update: http//:localhost:port_no/api/v1/user/:userId
+#API Endpoints
+User API
+Create User:
 
-# # Station API:
-# Create: http//:localhost:port_no/api/v1/station
-# All Station: http//:localhost:port_no/api/v1/station
-# Get Specific Station: http//:localhost:port_no/api/v1/station/:stationId
-# Update: http//:localhost:port_no/api/v1/station/:stationId
+Endpoint: POST /api/v1/user
+Description: Registers a new user.
+Login User:
 
-# # Train API:
-# Create: http//:localhost:port_no/api/v1/train
-# All Station: http//:localhost:port_no/api/v1/train
-# Get Specific train: http//:localhost:port_no/api/v1/train/:trainId
-# Update: http//:localhost:port_no/api/v1/train/:trainId
+Endpoint: POST /api/v1/login
+Description: Authenticates a user and returns a JWT token.
+Update User:
 
+Endpoint: POST /api/v1/user/:userId
+Description: Updates user information. Requires authentication.
+Station API
+Create Station:
 
-# # Wallet API:
-# ADD: http//:localhost:port_no/api/v1/wallet
-# All Fund: http//:localhost:port_no/api/v1/wallet/fund
-# Get Specific user wallets: http//:localhost:port_no/api/v1/wallet
+Endpoint: POST /api/v1/station
+Description: Creates a new station.
+Get All Stations:
 
-##  Ticket API:
-# Purchase: http//:localhost:port_no/api/v1/ticket
-# All: http//:localhost:port_no/api/v1/ticket
+Endpoint: GET /api/v1/station
+Description: Retrieves a list of all stations.
+Get Specific Station:
+
+Endpoint: GET /api/v1/station/:stationId
+Description: Retrieves information for a specific station.
+Update Station:
+
+Endpoint: PUT /api/v1/station/:stationId
+Description: Updates information for a specific station.
+Train API
+Create Train:
+
+Endpoint: POST /api/v1/train
+Description: Creates a new train schedule.
+Get All Trains:
+
+Endpoint: GET /api/v1/train
+Description: Retrieves a list of all trains.
+Get Specific Train:
+
+Endpoint: GET /api/v1/train/:trainId
+Description: Retrieves information for a specific train.
+Update Train:
+
+Endpoint: PUT /api/v1/train/:trainId
+Description: Updates information for a specific train.
+Wallet API
+Add Funds:
+
+Endpoint: POST /api/v1/wallet
+Description: Adds funds to a user's wallet.
+Get All Wallet Funds:
+
+Endpoint: GET /api/v1/wallet/fund
+Description: Retrieves all wallet funds.
+Get User Wallet:
+
+Endpoint: GET /api/v1/wallet
+Description: Retrieves wallet information for a specific user.
+Ticket API
+Purchase Ticket:
+
+Endpoint: POST /api/v1/ticket
+Description: Purchases a ticket.
+Get All Tickets:
+
+Endpoint: GET /api/v1/ticket
+Description: Retrieves a list of all tickets.
 
 
