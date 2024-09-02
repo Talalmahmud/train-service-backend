@@ -1,11 +1,13 @@
-const checkRoles = (userRoles) => {
-  async (req, res, next) => {
-    const { roles } = req.user;
-    if (roles.includes(userRoles)) {
-      next();
-    }
-    res.status(301).json({ messsage: "Unauthorized user." });
-  };
+const checkRoles = (allowedRoles) => (req, res, next) => {
+  const userRole = req.user.role;
+
+  if (allowedRoles.includes(userRole)) {
+    return next();
+  } else {
+    return res
+      .status(403)
+      .json({ message: "Forbidden: You do not have the required role" });
+  }
 };
 
 module.exports = checkRoles;
