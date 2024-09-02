@@ -1,6 +1,4 @@
-Sure! Here’s a complete `README.md` file for your Train Service Management System project:
 
-```markdown
 # Train Service Management System
 
 ## Project Overview
