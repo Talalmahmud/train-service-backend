@@ -11,6 +11,8 @@ const userRoutes = require("./routes/userRoute");
 const stationRoutes = require("./routes/stationRoute");
 const trainRoutes = require("./routes/trainRoute");
 
+const walltetRoutes = require("./routes/walletRoute");
+
 dbConnect();
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
@@ -19,6 +21,7 @@ app.use(express.json());
 app.use("/api/v1", userRoutes);
 app.use("/api/v1", stationRoutes);
 app.use("/api/v1", trainRoutes);
+app.use("/api/v1", walltetRoutes);
 
 app.use((err, req, res, next) => {
   res.status(500).send("Something broke!");

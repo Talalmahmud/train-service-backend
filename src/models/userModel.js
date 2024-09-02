@@ -10,8 +10,8 @@ const userSchema = new mongoose.Schema(
     email: {
       type: String,
       required: true,
-      unique: true, 
-      index: true, 
+      unique: true,
+      index: true,
     },
     password: {
       type: String,
@@ -19,10 +19,10 @@ const userSchema = new mongoose.Schema(
     },
     role: {
       type: String,
-      enum: ["Admin", "User", "StationManager"],
+      enum: ["Admin", "User", "Controller", "Accountants"],
       default: "User",
     },
-    wallet: [
+    wallets: [
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Wallet",
@@ -32,7 +32,7 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Pre-save 
+// Pre-save
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
   const salt = await bcrypt.genSalt(10);
